@@ -34,17 +34,17 @@
                 <div class="contenedor-campos">
                     <div class="campo">
                         <label for="">Nombre</label>
-                        <input class="input-text" type="text" placeholder="Tu nombre">
+                        <input class="input-text" type="text" placeholder="Tu nombre" id="nombre">
                     </div>
                     
                     <div class="campo">
                         <label>Teléfono</label>
-                        <input class="input-text" type="tel" placeholder="Tu teléfono">
+                        <input class="input-text" type="tel" placeholder="Tu teléfono" id="telefono">
                     </div>
     
                     <div class="campo">
                         <label>Correo</label>
-                        <input class="input-text" type="email" placeholder="Tu correo">
+                        <input class="input-text" type="email" placeholder="Tu correo" id="correo">
                     </div>
     
                     <div class="campo">
@@ -52,17 +52,25 @@
                         <textarea class="input-text"></textarea>
                     </div>
                 </div><!--.contenedor-campos-->
-                <div class="enviar">
-                    <input class="boton" type="submit" value="Enviar">
+                <div class="enviar" onclick="vaciar()">
+                    <input class="boton" type="button" value="Enviar" id="btnEnviar">
                 </div>  
             </fieldset>
         </form>
         </div>
     </section>
 
-        <div class="descarga">
-            <a href="pdf/listadoSabores.pdf" class="boton" download="Catalogo.pdf">Catálogo</a>
+    <section>
+        <div class="contenedor-quienessomos-descarga">
+            <div class="quienessomos">
+                <p>En Java's nos distinguimos de las heladerías convencionales por elaborar nuestros productos de forma manual, <br> la utilización de maquinarias industriales, lo que nos permite tener un mayor control sobre el proceso de elaboración y ofrecer un producto final único y auténtico. </p>
+            </div>
+    
+            <div class="descarga">
+                <a href="pdf/listadoSabores.pdf" class="boton" download="Catalogo.pdf">Descargar Catálogo</a>
+            </div>
         </div>
+    </section>
     
 
     <section>
@@ -144,5 +152,10 @@
     <footer class="contenedor-footer">
         <p class="footer-parrafo">Todos los derechos reservados. Heladeria JAVA'S</p>
     </footer>
+
+    <script src="js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
 </body>
 </html>
