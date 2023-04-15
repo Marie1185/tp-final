@@ -50,7 +50,6 @@ h1, h2, h3 {
     height: 12rem;
 }
 .hero {
-    background-image: url(/img/banner.jpeg);
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
